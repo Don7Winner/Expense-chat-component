@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: hsl(26, 66%, 93%);
+  font-family: "DM Sans";
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-size: 18px;
+  font-weight: 400;
+}
+main {
+  width: 500px;
+}
+header {
+  background-color: hsl(10, 79%, 65%);
+  color: hsl(26, 66%, 93%);
+  border-radius: 1.2rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.chat {
+  background-color: #fff;
+  border-radius: 1.2rem;
+  padding: 2rem;
+}
+ul {
+  color: hsl(28, 10%, 53%);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+h1 {
+  color: hsl(25, 47%, 15%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+hr {
+  color: hsl(28, 10%, 53%);
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.bottom p {
+  color: hsl(28, 10%, 53%);
+  font-size: 1rem;
+}
+.bottom span {
+  color: hsl(25, 47%, 15%);
+  font-size: 2.5rem;
+}
+.list p:first-child {
+  color: hsla(25, 47%, 15%, 0.76);
+  font-weight: 700;
+  justify-self: flex-end;
+}
+.pie-chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pie-chat div {
+  cursor: pointer;
+}
+.mon div {
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 0.3rem;
+  height: 37.45px;
+  width: 40px;
+}
+.tue div {
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 0.3rem;
+  height: 74.91px;
+  width: 40px;
+}
+.wed div {
+  background-color: hsl(186, 34%, 65%);
+  border-radius: 0.3rem;
+  height: 112.36px;
+  width: 40px;
+}
+.thur div {
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 0.3rem;
+  height: 64.07px;
+  width: 40px;
+}
+.fri div {
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 0.3rem;
+  height: 43.39px;
+  width: 40px;
+}
+.sat div {
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 0.3rem;
+  height: 83.28px;
+  width: 40px;
+}
+.sun div {
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 0.3rem;
+  height: 50.48px;
+  width: 40px;
+}
+.pie-chat div:hover {
+  background-color: hsl(10, 76%, 69%);
+}
+.wed div:hover {
+  background-color: hsl(186, 53%, 70%);
+}
+/* THE STARTING OF THE MEDIA QUERY  */
+@media (max-width: 568px) {
+  main {
+    width: 100%;
+    padding: 1rem;
+  }
+  header img {
+    width: 60px;
+  }
+  .bottom span {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 420px) {
+  .pie-chat div {
+    width: 30px;
+  }
+}
+@media (max-width: 360px) {
+  .pie-chat div {
+    width: 25px;
+  }
+  .list p:last-child {
+    font-size: 0.8rem;
+  }
+}
