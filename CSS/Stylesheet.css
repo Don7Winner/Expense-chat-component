@@ -130,7 +130,7 @@ hr {
 @media (max-width: 568px) {
   main {
     width: 100%;
-    padding: 1rem;
+    padding: 0 1rem;
   }
   header img {
     width: 60px;
